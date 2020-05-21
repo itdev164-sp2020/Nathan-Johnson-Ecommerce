@@ -1,8 +1,7 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 /* eslint-disable no-use-before-define */
-
 import React, {useState, useContext} from 'react'
-import {navigate} from 'gatsby'
+import {navigate, Link} from 'gatsby'
 import {Header, Form, Input, Button, Segment, Message} from 'semantic-ui-react'
 import SEO from '../components/SEO'
 import AuthContext from '../components/Context/AuthContext'
@@ -71,7 +70,6 @@ const Register = ({location}) => {
             />
           </Form.Field>
           {errors.name && <p style={{color: 'red'}}>{errors.name}</p>}
-
           <Form.Field>
             <label htmlFor="email">Email</label>
             <Input
@@ -99,6 +97,9 @@ const Register = ({location}) => {
           <Button type="submit" color="orange">
             Register
           </Button>
+          <div>
+            Already have an account?<Link to="/login/">Sign In </Link>
+          </div>
         </Segment>
       </Form>
     </Layout>
