@@ -3,156 +3,168 @@
 exports[`renders 1`] = `
 <DocumentFragment>
   <div
-    class="headroom-wrapper"
+    style="background-color: rgb(248, 248, 248);"
   >
     <div
-      class="headroom headroom--unfixed"
-      style="position: relative; top: 0px; left: 0px; right: 0px; z-index: 20; transform: translate3D(0, 0, 0); height: 6.5em;"
+      class="headroom-wrapper"
     >
-      <div>
-        <div
-          class="ui huge borderless pointing menu"
-        >
+      <div
+        class="headroom headroom--unfixed"
+        style="position: relative; top: 0px; left: 0px; right: 0px; z-index: 20; transform: translate3D(0, 0, 0); height: 6.5em;"
+      >
+        <div>
           <div
-            class="ui text container"
+            class="ui huge borderless pointing menu"
           >
-            <a
-              aria-current="page"
-              class="header item"
-              href="/"
-            >
-              <img
-                alt="I love Lamp"
-                class="ui mini image"
-                src="test-file-stub"
-                style="margin-right: 1.5em;"
-              />
-              Starter Store
-            </a>
             <div
-              class="right menu"
+              class="ui text container"
             >
               <a
-                class="item"
-                href="/register/"
+                aria-current="page"
+                class="header item"
+                href="/"
               >
-                Sign up
-              </a>
-              <a
-                class="item"
-                href="/login/"
-              >
-                Sign in
-              </a>
-              <a
-                class="item"
-                href="/cart/"
-              >
+                <img
+                  alt="I love Lamp"
+                  class="ui mini image"
+                  src="test-file-stub"
+                  style="margin-right: 1.5em;"
+                />
                 <div>
-                  <i
-                    aria-hidden="true"
-                    class="cart icon"
-                  />
-                   Cart (0)
+                  VietnameseCoffee.Coffee
                 </div>
               </a>
+              <div
+                class="right menu"
+              >
+                <a
+                  class="item"
+                  href="/shop/"
+                >
+                  Shop
+                </a>
+                <a
+                  class="item"
+                  href="/register/"
+                >
+                  Sign up
+                </a>
+                <a
+                  class="item"
+                  href="/login/"
+                >
+                  Sign in
+                </a>
+                <a
+                  class="item"
+                  href="/cart/"
+                >
+                  <div>
+                    <i
+                      aria-hidden="true"
+                      class="cart icon"
+                    />
+                     Cart (0)
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div
-    class="ui text container"
-  >
-    <h1
-      class="ui header"
+    <div
+      class="ui text container"
     >
-      Create an account
-    </h1>
-    <form
-      class="ui error form"
-    >
-      <div
-        class="ui segment"
+      <h1
+        class="ui header"
+      >
+        Create an account
+      </h1>
+      <form
+        class="ui error form"
       >
         <div
-          class="field"
+          class="ui segment"
         >
-          <label
-            for="name"
-          >
-            Name
-          </label>
           <div
-            class="ui fluid input"
+            class="field"
           >
-            <input
-              id="name"
-              name="name"
-              type="text"
-              value=""
-            />
+            <label
+              for="name"
+            >
+              Name
+            </label>
+            <div
+              class="ui fluid input"
+            >
+              <input
+                id="name"
+                name="name"
+                type="text"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="field"
+          >
+            <label
+              for="email"
+            >
+              Email
+            </label>
+            <div
+              class="ui fluid input"
+            >
+              <input
+                id="email"
+                name="email"
+                type="email"
+                value=""
+              />
+            </div>
+          </div>
+          <div
+            class="field"
+          >
+            <label
+              for="password"
+            >
+              Password
+            </label>
+            <div
+              class="ui fluid input"
+            >
+              <input
+                id="password"
+                name="password"
+                type="password"
+                value=""
+              />
+            </div>
+          </div>
+          <button
+            class="ui orange button"
+            type="submit"
+          >
+            Register
+          </button>
+          <div>
+            Already have an account?
+            <a
+              href="/login/"
+            >
+              Sign In 
+            </a>
           </div>
         </div>
-        <div
-          class="field"
-        >
-          <label
-            for="email"
-          >
-            Email
-          </label>
-          <div
-            class="ui fluid input"
-          >
-            <input
-              id="email"
-              name="email"
-              type="email"
-              value=""
-            />
-          </div>
-        </div>
-        <div
-          class="field"
-        >
-          <label
-            for="password"
-          >
-            Password
-          </label>
-          <div
-            class="ui fluid input"
-          >
-            <input
-              id="password"
-              name="password"
-              type="password"
-              value=""
-            />
-          </div>
-        </div>
-        <button
-          class="ui orange button"
-          type="submit"
-        >
-          Register
-        </button>
-        <div>
-          Already have an account?
-          <a
-            href="/login/"
-          >
-            Sign In 
-          </a>
-        </div>
-      </div>
-    </form>
+      </form>
+    </div>
   </div>
   <div
     class="ui vertical segment"
-    style="padding: 4em 0em; margin-top: 3em; border-top: 1px solid #f2f2f2;"
+    style="padding: 4em 0em; border-top: 1px solid #f2f2f2;"
   >
     <div
       class="ui text container"
@@ -180,14 +192,21 @@ exports[`renders 1`] = `
                 href="/privacy/"
                 role="listitem"
               >
-                Privacy
+                Info
+              </a>
+              <a
+                class="item"
+                href="/privacy/"
+                role="listitem"
+              >
+                FAQ
               </a>
               <a
                 class="item"
                 href="/terms/"
                 role="listitem"
               >
-                Terms
+                Contact
               </a>
             </div>
           </div>
@@ -209,7 +228,14 @@ exports[`renders 1`] = `
                 href="/"
                 role="listitem"
               >
-                Our Products
+                Coffee Products
+              </a>
+              <a
+                class="item"
+                href="/recipies"
+                role="listitem"
+              >
+                Recipies
               </a>
             </div>
           </div>
@@ -219,36 +245,16 @@ exports[`renders 1`] = `
             <h4
               class="ui header"
             >
-              Footer Header
+              The Best Coffee In The World
             </h4>
             <p>
-              Extra space for a call to action inside the footer that could help re-engage users.
+              Traditional home-brew Vietnamese coffee, made using Arabica, Robusta, Excelsa & Catimor beans. Incredibly rich flavor and high caffeine content. This coffee is thick, buttery smooth, and delicious unlike anything you have tried before!
             </p>
             <div
               class="ui horizontal list"
               role="list"
               style="display: flex;"
             >
-              <div
-                class="item"
-                role="listitem"
-                style="display: flex;"
-              >
-                <i
-                  aria-hidden="true"
-                  class="twitter icon"
-                />
-                <div
-                  class="content"
-                >
-                  <a
-                    alt="twitter link"
-                    href="https://twitter.com/parmsang"
-                  >
-                    Twitter
-                  </a>
-                </div>
-              </div>
               <div
                 class="item"
                 role="listitem"

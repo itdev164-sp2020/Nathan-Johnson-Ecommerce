@@ -7,14 +7,20 @@ import 'semantic-ui-css/semantic.min.css'
 
 const Layout = ({location, children}) => (
   <>
-    <Headroom
-      upTolerance={10}
-      downTolerance={10}
-      style={{zIndex: '20', height: '6.5em'}}
+    <div
+      style={{
+        backgroundColor: '#F8F8F8',
+      }}
     >
-      <Header location={location} />
-    </Headroom>
-    <Container text>{children}</Container>
+      <Headroom
+        upTolerance={10}
+        downTolerance={10}
+        style={{zIndex: '20', height: '6.5em'}}
+      >
+        <Header location={location} />
+      </Headroom>
+      <Container text>{children}</Container>
+    </div>
     <Footer />
   </>
 )

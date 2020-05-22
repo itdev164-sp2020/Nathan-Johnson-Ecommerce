@@ -89,7 +89,7 @@ const MobileMenu = ({location: {pathname}, token, cartCount, signout}) => {
           active={activeItem === withPrefix('/')}
         >
           <Logo />
-          Store
+          Coffee
         </Menu.Item>
         <Menu.Menu position="right">
           <Menu.Item
@@ -124,6 +124,10 @@ const MobileMenu = ({location: {pathname}, token, cartCount, signout}) => {
               </CloseButton>
               <StyledLink to="/" onClick={handleClose}>
                 Home
+              </StyledLink>
+              <StyledDivider />
+              <StyledLink to="/shop" onClick={handleClose}>
+                Shop
               </StyledLink>
               <StyledDivider />
               <StyledLink to="/cart/" onClick={handleClose}>

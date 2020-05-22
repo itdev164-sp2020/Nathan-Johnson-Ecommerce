@@ -1,0 +1,133 @@
+.Hero {
+  width: 100vw;
+  position: relative;
+  margin-left: -50vw;
+  margin-top: -100px;
+  left: 50%;
+  z-index: 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .coffeeButton {
+    width: 75%;
+    height: 300px;
+    position: center;
+    margin: 0 auto;
+    margin-top: -50px;
+    z-index: 3;
+    border-radius: 5px;
+    border: 1px solid #d6d6d6;
+    position: relative;
+    background-color: white;
+  }
+
+  .coffeeButton:hover {
+    border: 1px solid #95a4ce;
+    cursor: pointer;
+    transform: translateY(-5px);
+    transition: all 0.5s;
+    box-shadow: 0px 3px 3px rgb(58, 58, 58);
+  }
+
+  .scooterContainer {
+    width: 49%;
+    height: 100%;
+    display: inline-block;
+  }
+
+  .scooter {
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .shopContainer {
+    width: 49%;
+    height: 100%;
+    display: inline-block;
+    top: 0;
+    position: absolute;
+    font-size: 140px;
+    padding-top: 50px;
+  }
+
+  .shopContainer h1 {
+    font-size: 3rem;
+    opacity: 0.7;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .coffeeButton {
+    width: 75%;
+    height: 200px;
+    position: center;
+    margin: 0 auto;
+    margin-top: -50px;
+    z-index: 3;
+    border-radius: 5px;
+    border: 1px solid #d6d6d6;
+    position: relative;
+    background-color: white;
+  }
+
+  .coffeeButton:hover {
+    border: 1px solid #95a4ce;
+    cursor: pointer;
+    transform: translateY(-5px);
+    transition: all 0.5s;
+    box-shadow: 0px 3px 3px rgb(58, 58, 58);
+  }
+
+  .scooterContainer {
+    width: 49%;
+    height: 100%;
+    display: inline-block;
+  }
+
+  .scooter {
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .shopContainer {
+    width: 49%;
+    height: 100%;
+    display: inline-block;
+    top: 0;
+    position: absolute;
+    font-size: 140px;
+    padding-top: 30px;
+  }
+
+  .shopContainer h1 {
+    font-size: 1.5rem;
+    opacity: 0.7;
+  }
+}
+
+.Coffees {
+  width: 100%;
+  margin-top: -20px;
+  padding-bottom: 20px;
+}
+
+.Coffees:hover {
+  transform: scale(1.01);
+  transition: all 0.2s;
+  cursor: pointer;
+}
+
+.View {
+  text-align: center;
+  margin-top: -30px;
+  color: white;
+  display: block;
+  padding-bottom: 50;
+  z-index: 99;
+}
+
+.coffeeImage {
+  width: 100%;
+}

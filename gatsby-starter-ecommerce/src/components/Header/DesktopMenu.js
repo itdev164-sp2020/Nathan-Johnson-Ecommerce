@@ -21,7 +21,7 @@ const DesktopMenu = ({location: {pathname}, token, cartCount, signout}) => {
           header
         >
           <Logo />
-          Starter Store
+          <div>VietnameseCoffee.Coffee</div>
         </Menu.Item>
         {token ? (
           <Menu.Menu position="right">
@@ -44,6 +44,13 @@ const DesktopMenu = ({location: {pathname}, token, cartCount, signout}) => {
           </Menu.Menu>
         ) : (
           <Menu.Menu position="right">
+            <Menu.Item
+              as={Link}
+              to="/shop/"
+              active={activeItem === withPrefix('/shop/')}
+            >
+              Shop
+            </Menu.Item>
             <Menu.Item
               as={Link}
               to="/register/"
