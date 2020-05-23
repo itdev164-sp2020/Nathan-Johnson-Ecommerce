@@ -49,6 +49,11 @@
     position: absolute;
     font-size: 140px;
     padding-top: 50px;
+    color: rgb(48, 48, 48);
+  }
+
+  .shopContainer:hover {
+    color: black;
   }
 
   .shopContainer h1 {
@@ -130,4 +135,15 @@
 
 .coffeeImage {
   width: 100%;
+}
+
+.freeship {
+  color: rgb(172, 172, 173);
+  text-align: center;
+  padding: 20px;
+}
+
+.egg {
+  width: 50vw;
+  max-width: 500px;
 }

@@ -2,6 +2,7 @@ import React from 'react'
 import {Link} from 'gatsby'
 import {Segment, Container, Grid, List, Header} from 'semantic-ui-react'
 
+/*
 const facebookLink = (
   <a href="https://facebook.com/" alt="facebook link">
     Facebook
@@ -12,6 +13,21 @@ const emailLink = (
     Email
   </a>
 )
+
+    
+            <List horizontal style={{display: 'flex'}}>
+              <List.Item
+                icon="facebook"
+                style={{display: 'flex'}}
+                content={facebookLink}
+              />
+              <List.Item
+                icon="mail"
+                style={{display: 'flex'}}
+                content={emailLink}
+              />
+            </List>
+            */
 
 const Footer = () => (
   <Segment
@@ -28,13 +44,13 @@ const Footer = () => (
           <Grid.Column width={4}>
             <Header as="h4" content="About" />
             <List>
-              <List.Item as={Link} to="/privacy/">
+              <List.Item as={Link} to="/about/">
                 Info
               </List.Item>
-              <List.Item as={Link} to="/privacy/">
+              <List.Item as={Link} to="/faq/">
                 FAQ
               </List.Item>
-              <List.Item as={Link} to="/terms/">
+              <List.Item as={Link} to="/contact/">
                 Contact
               </List.Item>
             </List>
@@ -42,7 +58,7 @@ const Footer = () => (
           <Grid.Column width={5}>
             <Header as="h4" content="Services" />
             <List>
-              <List.Item as={Link} to="/">
+              <List.Item as={Link} to="/shop">
                 Coffee Products
               </List.Item>
               <List.Item as={Link} to="/recipies">
@@ -58,18 +74,6 @@ const Footer = () => (
               caffeine content. This coffee is thick, buttery smooth, and
               delicious unlike anything you have tried before!
             </p>
-            <List horizontal style={{display: 'flex'}}>
-              <List.Item
-                icon="facebook"
-                style={{display: 'flex'}}
-                content={facebookLink}
-              />
-              <List.Item
-                icon="mail"
-                style={{display: 'flex'}}
-                content={emailLink}
-              />
-            </List>
           </Grid.Column>
         </Grid.Row>
       </Grid>

@@ -93,6 +93,7 @@ const Cart = ({location}) => {
       {!loading && !completed && (
         <CartSummary {...meta} handleCheckout={handleCheckout} />
       )}{' '}
+      <p>&nbsp;</p>
     </Layout>
   )
 }

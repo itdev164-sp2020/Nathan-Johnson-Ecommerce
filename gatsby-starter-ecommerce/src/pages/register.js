@@ -98,10 +98,11 @@ const Register = ({location}) => {
             Register
           </Button>
           <div>
-            Already have an account?<Link to="/login/">Sign In </Link>
+            Already have an account?<Link to="/login/"> Sign In </Link>
           </div>
         </Segment>
       </Form>
+      <p>&nbsp;</p>
     </Layout>
   )
 }

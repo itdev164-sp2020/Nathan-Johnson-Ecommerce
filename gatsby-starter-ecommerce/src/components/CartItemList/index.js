@@ -64,7 +64,7 @@ export default ({items, removeFromCart, loading, completed}) => {
           </>
         ),
         meta: `${quantity}x ${price}`,
-        description: 'Some more information goes here....',
+        description: 'You are going to love it....',
         extra: (
           <Button
             basic

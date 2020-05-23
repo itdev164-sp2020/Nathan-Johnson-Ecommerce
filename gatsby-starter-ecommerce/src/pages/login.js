@@ -93,6 +93,7 @@ const LoginPage = ({location}) => {
           </Button>
         </Segment>
       </Form>
+      <p>&nbsp;</p>
     </Layout>
   )
 }

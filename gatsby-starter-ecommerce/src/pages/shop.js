@@ -1,5 +1,5 @@
 import React from 'react'
-import {graphql, useStaticQuery} from 'gatsby'
+import {graphql, useStaticQuery, Link} from 'gatsby'
 import get from 'lodash/get'
 import {Header} from 'semantic-ui-react'
 import ProductList from '../components/ProductList'
@@ -66,6 +66,11 @@ const shop = ({location}) => {
         ></Header.Content>
       </Header>
       <ProductList products={filterProductsWithoutImages} />
+      <div className="freeship">
+        <h1> FREE SHIPPING ON ALL ORDERS IN THE USA</h1>
+        <Link to="/contact">Contact us </Link> for international shipping and
+        wholesale orders
+      </div>
     </Layout>
   )
 }

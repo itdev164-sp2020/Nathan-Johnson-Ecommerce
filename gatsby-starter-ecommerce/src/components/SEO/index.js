@@ -62,6 +62,20 @@ function SEO({description, lang, meta, keywords, title}) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: 'og:image',
+          content:
+            'https://images.unsplash.com/photo-1497515114629-f71d768fd07c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1962&q=80',
+        },
+        {
+          name: 'defaultImage',
+          content:
+            'https://images.unsplash.com/photo-1497515114629-f71d768fd07c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1962&q=80',
+        },
+        {
+          name: `robots`,
+          content: `index,follow`,
+        },
         {name: 'msapplication-TileColor', content: '#da532c'},
         {name: 'theme-color', content: '#ffffff'},
       ]

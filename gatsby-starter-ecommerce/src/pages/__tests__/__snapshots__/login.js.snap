@@ -133,6 +133,9 @@ exports[`renders 1`] = `
           </button>
         </div>
       </form>
+      <p>
+         
+      </p>
     </div>
   </div>
   <div
@@ -162,21 +165,21 @@ exports[`renders 1`] = `
             >
               <a
                 class="item"
-                href="/privacy/"
+                href="/about/"
                 role="listitem"
               >
                 Info
               </a>
               <a
                 class="item"
-                href="/privacy/"
+                href="/faq/"
                 role="listitem"
               >
                 FAQ
               </a>
               <a
                 class="item"
-                href="/terms/"
+                href="/contact/"
                 role="listitem"
               >
                 Contact
@@ -196,9 +199,8 @@ exports[`renders 1`] = `
               role="list"
             >
               <a
-                aria-current="page"
                 class="item"
-                href="/"
+                href="/shop"
                 role="listitem"
               >
                 Coffee Products
@@ -223,52 +225,6 @@ exports[`renders 1`] = `
             <p>
               Traditional home-brew Vietnamese coffee, made using Arabica, Robusta, Excelsa & Catimor beans. Incredibly rich flavor and high caffeine content. This coffee is thick, buttery smooth, and delicious unlike anything you have tried before!
             </p>
-            <div
-              class="ui horizontal list"
-              role="list"
-              style="display: flex;"
-            >
-              <div
-                class="item"
-                role="listitem"
-                style="display: flex;"
-              >
-                <i
-                  aria-hidden="true"
-                  class="facebook icon"
-                />
-                <div
-                  class="content"
-                >
-                  <a
-                    alt="facebook link"
-                    href="https://facebook.com/"
-                  >
-                    Facebook
-                  </a>
-                </div>
-              </div>
-              <div
-                class="item"
-                role="listitem"
-                style="display: flex;"
-              >
-                <i
-                  aria-hidden="true"
-                  class="mail icon"
-                />
-                <div
-                  class="content"
-                >
-                  <a
-                    alt="email link"
-                    href="mailto:john@doe.com"
-                  >
-                    Email
-                  </a>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </div>

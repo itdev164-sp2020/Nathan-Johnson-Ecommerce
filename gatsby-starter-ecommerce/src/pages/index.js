@@ -1,6 +1,5 @@
 import React from 'react'
-import {graphql, useStaticQuery, Link} from 'gatsby'
-import get from 'lodash/get'
+import {Link} from 'gatsby'
 import {Header} from 'semantic-ui-react'
 import SEO from '../components/SEO'
 import Layout from '../components/Layout'
@@ -13,6 +12,7 @@ import Coffees from '../images/coffees.jpg'
 import '../App.css'
 
 const StoreIndex = ({location}) => {
+  /*
   const data = useStaticQuery(graphql`
     query IndexQuery {
       site {
@@ -48,12 +48,10 @@ const StoreIndex = ({location}) => {
       }
     }
   `)
-
-  const siteTitle = get(data, 'site.siteMetadata.title')
-
+*/
   return (
     <Layout location={location}>
-      <SEO title={siteTitle} />
+      <SEO title="Vietnamese Coffee" description="Buy Vietnamese Coffee" />
       <Header
         as="h3"
         icon
@@ -77,19 +75,21 @@ const StoreIndex = ({location}) => {
           </div>
           <span className="shopContainer">
             <h1>Shop</h1>
-            <h1>Vietnamse</h1>
+            <h1>Vietnamese</h1>
             <h1>Coffee</h1>
           </span>
         </div>
       </Link>
-      <div className="Coffees">
-        <img
-          className="coffeeImage"
-          src={Coffees}
-          alt="Amazing Vietnamese Coffee Recipies"
-        />
-        <div className="View"> View Coffee Recipies</div>
-      </div>
+      <Link to="/recipies">
+        <div className="Coffees">
+          <img
+            className="coffeeImage"
+            src={Coffees}
+            alt="Amazing Vietnamese Coffee Recipies"
+          />
+          <div className="View"> View Coffee Recipies</div>
+        </div>
+      </Link>
     </Layout>
   )
 }

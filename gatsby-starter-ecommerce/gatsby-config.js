@@ -4,10 +4,11 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby starter ecommerce',
-    author: 'Parminder Sanghera',
-    description: 'A starter e-commerce site made using Gatsby.',
-    siteUrl: 'https://parmsang.github.io/gatsby-starter-ecommerce/',
+    title: 'Vietnamese Coffee.Coffee',
+    author: 'Nathan Johnson',
+    description: 'Amazing Vietnamese Coffee!!!!!!!!!!!!!!!!',
+    siteUrl: 'https://vietnamsescoffee.coffee/',
+    image: './src/images/whitescooter.jpg',
   },
   pathPrefix: '/gatsby-starter-ecommerce',
   plugins: [
@@ -45,7 +46,7 @@ module.exports = {
         // Setting a color is optional.
         color: `tomato`,
         // Disable the loading spinner.
-        showSpinner: false,
+        showSpinner: true,
       },
     },
     'gatsby-plugin-styled-components',
